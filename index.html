@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Contraseña</title>
+</head>
+<body>
+    <div class="main-card">
+        <h3>Generador de <span>Contraseña</span></h3>
+        <div class="input-copy">
+            <div class="password">
+                <span id="pw-text">Zf0#vl3O_92C</span>
+                <a href=""><img src="./images/copyicon.png" alt=""></a>
+            </div>
+        </div>
+        <input id="range" type="range" min="4" max="20" step="1" onchange="showVal(this.value)">
+        <p class="display-pw-size">Password Size: <span>12</span></p>
+
+        <div class="select-option">
+            <input id="upper" type="checkbox" checked/>
+            <label for="upper">Mayusculas</label>
+        </div>
+        <div class="select-option">
+            <input id="lower" type="checkbox" checked/>
+            <label for="lower">Mínusculas</label>
+        </div>
+        <div class="select-option">
+            <input id="number" type="checkbox" checked/>
+            <label for="number">Numeros</label>
+        </div>
+        <div class="select-option">
+            <input id="symbol" type="checkbox" checked/>
+            <label for="symbol">Simbolos</label>
+        </div>
+        <button class="generate"> 
+            Generate
+        </button>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
